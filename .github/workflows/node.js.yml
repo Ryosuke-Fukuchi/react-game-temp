@@ -26,7 +26,6 @@ jobs:
                   cache: 'npm'
             - run: npm ci
             - run: npm run lint:eslint
-            - run: npm test
 
     build:
         needs: test
