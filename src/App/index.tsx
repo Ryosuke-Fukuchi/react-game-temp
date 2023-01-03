@@ -5,7 +5,7 @@ import Pinponpan from "./pinponpan";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Board />} />
         <Route path="/pinponpan" element={<Pinponpan />} />
