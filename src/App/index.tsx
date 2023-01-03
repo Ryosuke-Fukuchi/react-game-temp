@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Pinponpan from "./pinponpan";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
