@@ -4,7 +4,9 @@ import { PlayerOptionArea } from "./PlayerOptionArea";
 import { players } from "./players";
 
 export const Board: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [round, setRound] = useState(1);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [playerOn, setPlayerOn] = useState("1");
   const [selectedBlock, setSelectedBlock] = useState<number[]>([]);
 

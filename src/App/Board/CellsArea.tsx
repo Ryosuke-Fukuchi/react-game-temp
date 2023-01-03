@@ -8,6 +8,7 @@ type PropsType = {
 };
 
 export const CellsArea: React.FC<PropsType> = ({ playerOn, selectedBlock }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [cells, setCells] = useState(defaultCells);
   const [hoverPostions, setHoverPositions] = useState<string[]>([]);
   const [status, setStatus] = useState<"choose" | "select" | "fix">("choose");
