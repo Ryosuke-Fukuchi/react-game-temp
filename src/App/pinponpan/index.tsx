@@ -71,8 +71,10 @@ const Pinponpan: React.FC = () => {
 
     let callPattern: string = pattern;
     if (pattern === "6") {
+      // 1~7のpatternをランダムにセット
       const random = Math.floor(Math.random() * 7) + 1;
-      if (random === 5) {
+      if (5 <= random) {
+        // 5,6,7はパターン5をセット（確率の割り振り）
         callPattern = "5";
       } else {
         callPattern = String(random);
